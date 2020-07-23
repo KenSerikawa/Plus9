@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus 9</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <span class="title border ">
+            Plus 9
+        </span>
+    </div>
+
+    <!-- Table -->
+    <div class="game-board">
+        <div class="box"><span id="1_" draggable="true" ondragstart="dragHandler(event, this)" class="number border"></span></div>
+        <div class="box"><span id="2_" draggable="true" ondragstart="dragHandler(event, this)" class="number border"></span></div>
+        <div class="box"><span id="3_" draggable="true" ondragstart="dragHandler(event, this)" class="number border"></span></div>
+        <div class="box"><span id="4_" draggable="true" ondragstart="dragHandler(event, this)" class="number border"></span></div>
+        <div id="dropbox" ondrop="dropHandler(event, this);" ondragover="dragOverHandler(event);" class="box">
+            <span id="result" class="number border"></span>
+        </div>
+        <div class="box"><span id="5_" draggable="true" ondragstart="dragHandler(event, this)" class="number border"></span></div>
+        <div class="box"><span id="6_" draggable="true" ondragstart="dragHandler(event, this)" class="number border"></span></div>
+        <div class="box"><span id="7_" draggable="true" ondragstart="dragHandler(event, this)" class="number border"></span></div>
+        <div class="box"><span id="8_" draggable="true" ondragstart="dragHandler(event, this)" class="number border"></span></div>
+    </div>
+
+    <div class="description">
+    
+        <p class="border">Try to add numbers to the center till get 9 even</p>
+    
+    </div>
+
+    <div class="sidebar-menu">
+        <p class="score border">Score: <span id="matches">0</span></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
